@@ -1,0 +1,56 @@
+{
+  "name": "studydesk",
+  "version": "1.0.0",
+  "description": "A calm, offline home for your study day.",
+  "author": "StudyDesk",
+  "license": "MIT",
+  "type": "module",
+  "main": "out/main/index.js",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "electron-vite dev",
+    "start": "electron-vite preview",
+    "build": "npm run typecheck && electron-vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "dist:mac": "npm run build && electron-builder --mac dmg --arm64",
+    "dist:mac:intel": "npm run build && electron-builder --mac dmg --x64",
+    "postinstall": "install-electron --no"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "1.3.1",
+    "@radix-ui/react-slot": "1.5.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "electron-store": "12.0.0",
+    "lucide-react": "1.61.0",
+    "motion": "14.6.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tailwind-merge": "3.7.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "45.0.0",
+    "electron-builder": "26.15.3",
+    "electron-vite": "6.0.0",
+    "eslint": "9.39.5",
+    "globals": "17.13.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.0",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  }
+}

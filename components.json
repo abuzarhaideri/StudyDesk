@@ -1,0 +1,15 @@
+{
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "css": "frontend/src/styles.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "./frontend/src/components",
+    "utils": "./frontend/src/lib/utils"
+  },
+  "iconLibrary": "lucide"
+}
