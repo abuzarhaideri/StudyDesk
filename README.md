@@ -4,7 +4,9 @@ A calm, offline home for your study day. StudyDesk is a macOS Electron desktop s
 
 [GitHub repository](https://github.com/abuzarhaideri/StudyDesk) · [Installer and source downloads](https://github.com/abuzarhaideri/StudyDesk/releases/tag/v1.0.0)
 
-![StudyDesk dashboard](docs/screenshots/dashboard-light.png)
+[![StudyDesk dashboard showing tasks, daily progress, notes and the focus timer](docs/screenshots/dashboard-retina.png)](docs/screenshots/dashboard-retina.png)
+
+*Click the screenshot to open the full-resolution Retina image.*
 
 ## Features
 
